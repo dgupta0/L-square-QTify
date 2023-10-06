@@ -1,0 +1,24 @@
+.searchContainer{
+   width: 568px;
+    height: 48px;
+    display: flex;
+    flex-shrink: 0;
+    background-color: var(--color-white);
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid #121212;
+}
+.textBox{
+   width: 90%;
+   color: #121212;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+   padding-left: 1rem;
+}
+.searchPic{
+    width: 20px;
+    margin: auto;
+    cursor: pointer;
+}

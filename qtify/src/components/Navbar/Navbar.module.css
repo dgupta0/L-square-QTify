@@ -2,6 +2,7 @@
     background-color: var(--color-primary);
     height: 74px;
     display: flex;
+    gap: 1rem;
     width: 100vw;
     align-items: center;
     justify-content: space-between;
