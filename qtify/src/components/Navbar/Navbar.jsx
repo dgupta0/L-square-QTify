@@ -6,10 +6,17 @@ import { SearchBar } from '../SearchBar/SearchBar';
 
 export const Navbar = () => {
   return (
+    <>
     <nav className={styles.navbar}>
       <Logo/>
-      <SearchBar/>
+      <div className={styles.forDesktop}>
+      <SearchBar placeholder="Search a album of your choice"/>
+      </div>
       <Button children="Give Feedback"/>
     </nav>
+    <div className={styles.forPhone}>
+      <SearchBar  placeholder="Search a album of your choice"/>
+      </div>
+    </>
   )
 }

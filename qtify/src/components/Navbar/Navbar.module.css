@@ -8,3 +8,19 @@
     justify-content: space-between;
     padding: 0px 32px;
 }
+.forPhone{
+    display: none;
+}
+.forDesktop{
+  width: 400px;
+}
+
+@media(max-width: 750px){
+    .forPhone{
+        display: block;
+        width: 100vw;
+    }
+    .forDesktop{
+        display: none;
+    }
+}

@@ -1,24 +1,25 @@
+
 .searchContainer{
-   width: 568px;
     height: 48px;
     display: flex;
-    flex-shrink: 0;
-    background-color: var(--color-white);
-    border-radius: 0px 8px 8px 0px;
-    border: 1px solid #121212;
+    width: inherit;
+   
 }
 .textBox{
-   width: 90%;
-   color: #121212;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.2px;
-   padding-left: 1rem;
+   width: inherit;
+   padding: 14px 20px; 
+   border: 1px solid var(--color-black);
+   font-size: 16px;
+   font-style: normal;   
 }
-.searchPic{
-    width: 20px;
-    margin: auto;
+
+.searchBtn{
+    width: 67px;
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+    padding: 14px 20px; 
     cursor: pointer;
+    border: 1px solid var(--color-black);
+    border-left: none;
 }
+
