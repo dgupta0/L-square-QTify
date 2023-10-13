@@ -1,1 +1,25 @@
-
+.album-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:1rem;
+}
+.album-container{
+    padding: 0 0.5rem;
+}
+.album-info button{
+    background-color: var(--color-black);
+    border: none;
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+.album-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+   
+}

@@ -1,0 +1,10 @@
+.follow{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    max-width: fit-content;
+    padding: 0.25rem;
+    border-radius: 5px;
+    font-size: small;
+    margin-top: 6px;
+    margin-left: 6px;
+}
