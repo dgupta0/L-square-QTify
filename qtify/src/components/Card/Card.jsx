@@ -4,19 +4,22 @@
  
 
 const AlbumCard = ({data}) => {
-  const {image, follows} = data
+  const {image, follows, title} = data
   return (
+    <div>
      <Card className={styles.card} sx={{width: "160px", height: "205px"}}>
      <CardMedia
      component="img"
      height="82.5%"
      image={image}
-     alt="Paella dish"
+     alt="album pic"
      />
      <div className={styles.follow}>
      <p>{follows} followers</p>
      </div>
      </Card>
+     <p className={styles.title}>{title}</p>
+     </div>
   )
 }
 

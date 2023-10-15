@@ -4,12 +4,13 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import {Navbar} from "./components/Navbar/Navbar";
 import {Hero} from "./components/Hero/Hero";
-import { getTopAlbums } from './api/api';
-import AlbumCard from './components/Card/Card';
+import { getTopAlbums, getNewAlbums } from './api/api';
+import Section from './components/Section/Section';
 
 
 function App() {
   const [topAlbums, setTopAlbums] = useState(null);
+  const [newAlbums, setNewAlbums] = useState(null);
 
   async function getTopAlbumsData(){
     try {
@@ -22,37 +23,35 @@ function App() {
     return;
    
   }
+  async function getNewAlbumsData(){
+    try {
+      const data = await getNewAlbums();
+      setNewAlbums(data)
+      
+    } catch (error) {
+      console.log(error)
+    }
+    return;
+   
+  }
 
   useEffect(()=> {
  getTopAlbumsData();
+ getNewAlbumsData()
   }, [])
 
   return (
       <>
       <Navbar/>
       <Hero/>
-      <TopAlbums data={topAlbums}/>
+      <Section data={topAlbums} type="Top Albums"/>
+      <Section data={newAlbums} type="New Albums"/>
       </>
    
   );
 }
 
-const TopAlbums = ({data}) => {
-  console.log(data)
-  return (
-    data && (
-      <div className='album-container'>
-        <div className='album-info'>
-          <h3>Top Albums</h3>
-          <button>Show All</button>
-        </div>
-        <div className='album-list'>
-          {data.map(el => <AlbumCard key={el.id} data={el} />)}
-        </div>
-      </div>
-    )
-  );
-}
+
 
 export default App;
 

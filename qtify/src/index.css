@@ -20,3 +20,20 @@ body{
   color: var(--color-white);
   overflow-x: hidden;
 }
+
+.swiper-button-prev{
+ background-image: url("../src/assets/prev.svg");
+ background-repeat: no-repeat;
+ background-size: contain;
+ 
+}
+.swiper-button-next{
+  background-image: url("../src/assets/next.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+ }
+ .swiper-button-prev:after, .swiper-button-next:after {
+  display: none !important;
+ }
+ 
