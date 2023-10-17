@@ -20,3 +20,9 @@ h1{
   
   }
 }
+@media(max-width: 300px){
+  .hero{
+    flex-direction: column;
+  
+  }
+}

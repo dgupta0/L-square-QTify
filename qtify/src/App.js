@@ -6,6 +6,7 @@ import {Navbar} from "./components/Navbar/Navbar";
 import {Hero} from "./components/Hero/Hero";
 import { getTopAlbums, getNewAlbums } from './api/api';
 import Section from './components/Section/Section';
+import FAQ from './components/FAQ/FAQ';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
       <Hero/>
       <Section data={topAlbums} type="Top Albums"/>
       <Section data={newAlbums} type="New Albums"/>
+      <FAQ/>
       </>
    
   );

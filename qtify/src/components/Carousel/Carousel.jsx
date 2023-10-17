@@ -4,7 +4,6 @@ import 'swiper/css/navigation';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 import "./Carousel.module.css";
-
 import AlbumCard from '../Card/Card';
 
 const Carousel = ({data}) => {
@@ -12,28 +11,29 @@ const Carousel = ({data}) => {
     <Swiper
     navigation={true}
     slidesPerView={1}
+    spaceBetween={2}
     breakpoints={{
-        340: {
+        300: {
             slidesPerView: 2,
-            spaceBetween: 5,
+           
            
           },
-        640: {
+        550: {
             slidesPerView: 3,
-            spaceBetween: 10,
+          
           },
-          768: {
+          820: {
             slidesPerView: 4,
-            spaceBetween: 10,
+           
           },
           1024: {
             slidesPerView: 6,
-            spaceBetween: 10,
+           
           }
       }}
     modules={[Navigation]} 
   >
-    {data.map(el => <SwiperSlide><AlbumCard key={el.id} data={el} /></SwiperSlide>)}
+    {data.map(el => <SwiperSlide key={el.id}><AlbumCard key={el.id} data={el} /></SwiperSlide>)}
     </Swiper>
   )
 }
