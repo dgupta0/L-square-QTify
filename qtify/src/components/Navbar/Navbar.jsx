@@ -10,12 +10,12 @@ export const Navbar = () => {
     <nav className={styles.navbar}>
       <Logo/>
       <div className={styles.forDesktop}>
-      <SearchBar placeholder="Search a album of your choice"/>
+      <SearchBar placeholder="Search album of your choice"/>
       </div>
       <Button children="Give Feedback"/>
     </nav>
     <div className={styles.forPhone}>
-      <SearchBar  placeholder="Search a album of your choice"/>
+      <SearchBar  placeholder="Search album of your choice"/>
       </div>
     </>
   )
