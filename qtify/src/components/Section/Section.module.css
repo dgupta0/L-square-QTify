@@ -31,3 +31,13 @@ button{
         display: none;
     }
 }
+
+/* FilterSection */
+.hr{
+  border: 1px solid var(--color-primary);
+}
+.filter{
+    color: var(--color-white) !important;
+}
+
+

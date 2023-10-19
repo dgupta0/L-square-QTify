@@ -6,7 +6,7 @@ import Carousel from "../Carousel/Carousel";
 
 
 const Section = ({data, type}) => {
-  const [isShowAll, setIsShowAll]  = useState(false)
+  const [isShowAll, setIsShowAll]  = useState(false);
     return (
         data && (
             <div className={styles.album_container}>

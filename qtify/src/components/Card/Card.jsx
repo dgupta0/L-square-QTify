@@ -4,7 +4,7 @@
  
 
 const AlbumCard = ({data}) => {
-  const {image, follows, title} = data
+  const {image, follows, title, likes} = data
   return (
     <div>
      <Card className={styles.card} sx={{width: "160px", height: "205px"}}>
@@ -15,7 +15,7 @@ const AlbumCard = ({data}) => {
      alt="album pic"
      />
      <div className={styles.follow}>
-     <p>{follows} followers</p>
+     {follows? <p>{follows} followers</p> : <p>{`${likes} Likes`}</p>  }
      </div>
      </Card>
      <p className={styles.title}>{title}</p>

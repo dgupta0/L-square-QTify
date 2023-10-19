@@ -36,4 +36,12 @@ body{
  .swiper-button-prev:after, .swiper-button-next:after {
   display: none !important;
  }
+
+ /* changing the global mui css */
+
+ /* adjusting tab panels padding*/
+ .css-19kzrtu {
+  padding: 24px 0 0 0  !important;
+}
+
  

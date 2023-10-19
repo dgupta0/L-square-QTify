@@ -33,7 +33,7 @@ const Carousel = ({data}) => {
       }}
     modules={[Navigation]} 
   >
-    {data.map(el => <SwiperSlide key={el.id}><AlbumCard key={el.id} data={el} /></SwiperSlide>)}
+    {data?.map(el => <SwiperSlide key={el.id}><AlbumCard key={el.id} data={el} /></SwiperSlide>)}
     </Swiper>
   )
 }

@@ -1,6 +1,7 @@
 .FAQ_container{
     max-width: 750px;
     margin: auto;
+    margin-top: 2rem
 }
 .accordion_container{
     margin: 0 1rem;
