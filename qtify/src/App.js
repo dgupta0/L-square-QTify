@@ -73,7 +73,7 @@ function App() {
     getGenresData();
   }, [])
 
-console.log(songs)
+console.log(topAlbums)
 console.log(genres)
   return (
       <>
